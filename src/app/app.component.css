@@ -1,0 +1,85 @@
+main{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+header{
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 15px;
+
+    text-align: center;
+    font-size: 16px;
+    color: #FEF7EE;
+
+    margin: 150px;
+    padding: 80px ;
+    width: 80%;
+    background: #1B1D1F;
+}
+.description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+}
+.description h3{
+    font-size: 32px;
+    z-index: 1;
+}
+.description p{
+    text-wrap: pretty;
+    color: #6F757C;
+    font-weight: bold;
+    z-index: 1;
+}
+.description svg{
+    position: absolute;
+    z-index: 0;
+    top: -50px;
+    right: 0;
+}
+.grid {
+    width: 100%;
+
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.filters{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+.filters button{
+    font-size: 16px;
+    background: #6F757C;
+    color: #FEF7EE;
+    border: 0px;
+    outline: 0px;
+    border-radius: 5px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.filters .btn-active{
+    background: #6F757C;
+}
+.filters .btn-desactive{
+    background: transparent;
+}
